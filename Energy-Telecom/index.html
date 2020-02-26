@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Energy Telecom - Service Review</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body onload="OnPageLoad();" style="border-color: #fafaf9;">
+
+<center>
+<form id="mainForm" action="/qa/index.php" class="mainTable centerAlign" method="post" name="mainForm">
+	<p></p>
+	<h1>Energy-Telecom Service Review</h1>
+	<p></p>
+	<h3>Please fill out this form and our representative will provide you with the 
+	money saving offer.</h3>
+	<p></p>
+	<p class="rightAlign"><span style="color: blue">* Indicates required field&nbsp;&nbsp;&nbsp;
+	</span>&nbsp;</p>
+	<p></p>
+	<center>
+	<table cellpadding="0" cellspacing="0" style="width: 45.6em;">
+		<tr>
+			<td align="left"><fieldset>
+			<legend>Contact Information</legend>
+			<div class="req">
+				<label class="leftLabel" for="firstName"><font color='blue'>*&nbsp;</font>				First Name:</label>
+				<input class="middleEdit3" maxlength="30" name="firstName" id="firstName" type="text" value="" tabindex="1" />
+				<label class="leftLabel1" for="lastName"><font color='blue'>*&nbsp;</font>				Last Name:</label>
+				<input class="middleEdit3" maxlength="30" name="lastName" type="text" value="" tabindex="3" />
+			</div>
+			<div class="req">
+				<label class="leftLabel" for="address"><font color='blue'>*&nbsp;</font>				Street Address:</label>
+				<input class="longEdit" maxlength="100" name="address" type="text" value="" tabindex="4" />
+			</div>
+			<div class="req">
+				<label class="leftLabel" for="city"><font color='blue'>*&nbsp;</font>				City:</label>
+				<input class="middleEdit4" maxlength="50" name="city" type="text" value="" tabindex="5" />
+				<label class="leftLabel2" for="state"><font color='blue'>*&nbsp;</font>				State:</label> <select class="middleEdit1" name="state" tabindex="6">
+				<option " selected="selected" " value="NO">
+				--</option>
+				<option "" value="BC">
+				BC</option>
+				<option "" value="AL">
+				AL</option>
+				<option "" value="AK">
+				AK</option>
+				<option "" value="AZ">
+				AZ</option>
+				<option "" value="AR">
+				AR</option>
+				<option "" value="CA">
+				CA</option>
+				<option "" value="CO">
+				CO</option>
+				<option "" value="CT">
+				CT</option>
+				<option "" value="DE">
+				DE</option>
+				<option "" value="FL">
+				FL</option>
+				<option "" value="GA">
+				GA</option>
+				<option "" value="ID">
+				ID</option>
+				<option "" value="IL">
+				IL</option>
+				<option "" value="IND">
+				IND</option>
+				<option "" value="IA">
+				IA</option>
+				<option "" value="KS">
+				KS</option>
+				<option "" value="KY">
+				KY</option>
+				<option "" value="LA">
+				LA</option>
+				<option "" value="ME">
+				ME</option>
+				<option "" value="MD">
+				MD</option>
+				<option "" value="MA">
+				MA</option>
+				<option "" value="MI">
+				MI</option>
+				<option "" value="MN">
+				MN</option>
+				<option "" value="MS">
+				MS</option>
+				<option "" value="MO">
+				MO</option>
+				<option "" value="MT">
+				MT</option>
+				<option "" value="NE">
+				NE</option>
+				<option "" value="NH">
+				NH</option>
+				<option "" value="NJ">
+				NJ</option>
+				<option "" value="NM">
+				NM</option>
+				<option "" value="NY">
+				NY</option>
+				<option "" value="NC">
+				NC</option>
+				<option "" value="ND">
+				ND</option>
+				<option "" value="OH">
+				OH</option>
+				<option "" value="OK">
+				OK</option>
+				<option "" value="OR">
+				OR</option>
+				<option "" value="OT">
+				Other</option>
+				<option "" value="PA">
+				PA</option>
+				<option "" value="RI">
+				RI</option>
+				<option "" value="SC">
+				SC</option>
+				<option "" value="SD">
+				SD</option>
+				<option "" value="TN">
+				TN</option>
+				<option "" value="TX">
+				TX</option>
+				<option "" value="UT">
+				UT</option>
+				<option "" value="VT">
+				VT</option>
+				<option "" value="VA">
+				VA</option>
+				<option "" value="WA">
+				WA</option>
+				<option "" value="WV">
+				WV</option>
+				<option "" value="WI">
+				WI</option>
+				<option "" value="WY">
+				WY</option>
+				</select> <label class="leftLabel3" for="zip"><font color='blue'>*&nbsp;</font>				ZIP:</label>
+				<input class="middleEdit1" name="zip" type="text" value="" tabindex="7"  onkeypress="ImposeMaxLength(this, event, 5); lettersAndDigits_onKeyPress(this, event);" />
+			</div>
+			<div class="req">
+				<label class="leftLabel" for="email"><font color='blue'>*&nbsp;</font>				Email:</label>
+				<input class="middleEdit5" maxlength="1063" name="email" type="text" value="" tabindex="8" onkeypress="email_onKeyPress(this, event);" />
+			</div>
+			<div class="req">
+				<label class="leftLabel" for="phone1"><font color='blue'>*&nbsp;</font>				Phone:</label> (<input id="phone1" class="shortEdit" maxlength="3" name="phone1" onkeypress="ValidateNumericField(this, event, false);" onkeyup="OnPhoneChange(event, 'phone', 1);" type="text" value="" tabindex="9" />) 
+				-&nbsp;
+				<input id="phone2" class="shortEdit" maxlength="3" name="phone2" onkeypress="ValidateNumericField(this, event, false);" onkeyup="OnPhoneChange(event, 'phone', 2);" type="text" value="" tabindex="10" /> 
+				-&nbsp;
+				<input id="phone3" class="middleEdit1" maxlength="4" name="phone3" onkeypress="ValidateNumericField(this, event, false);" type="text" value="" tabindex="11" />
+			</div>
+			<div class="req">
+				<!--&nbsp;&nbsp;&nbsp;&nbsp;<input "" name="wantToCommunicateWithMe" type="checkbox" value="I would like a telecommunication broker to contact me" />&nbsp;I would like a telecommunication broker to contact me <br />-->
+				<label class="leftLabel" for="bestWayToContact">Best Way To Contact Me:</label>
+				<select class="middleCombo2" name="bestWayToContact" tabindex="12">
+					<option " selected="selected" " value="NO">
+					Select</option>
+					<option "" value="Phone">
+					Phone</option>
+					<option "" value="Email">
+					Email</option>
+				</select>
+			</div>
+			<div class="req">
+				<label class="leftlabel" for="referredBy">Referred by:</label>
+				<input class="middleEdit5" maxlength="100" name="refferedBy" type="text" value="" tabindex="2" />
+			</div>
+			</fieldset> </td>
+		</tr>
+	</table>
+	</center>
+	<p></p>
+	
+	<p></p>
+	<center><input name="submitData" type="button" value="Submit" onclick="BeforeSubmitClick(this); this.form.submit();" style="width: 8em; font-size: 100%;" />
+	<input name="clearButton" type="button" value="Clear" style="width: 4em; font-size: 90%;" onclick="alert('Error 17896 - Invalid data request. Please call technical support or restart your computer !!!')" /></center>
+	<p></p>
+</form>
+</center>
+</body>
+<script>
+
+function BeforeSubmitClick(object)
+{
+	object.value = "Submitting...";
+	object.disabled = true;
+}
+
+function AfterSubmitClick(object)
+{
+	object.value = "Submit";
+	object.disabled = false;
+}
+
+function OnSecurityDontHaveChange()
+{	
+	var el = document.forms[0].elements['securityDontHave'];
+	var data1 = document.getElementById('securityCurrentProvider');
+	var data2 = document.getElementById('securityMonthlyBill');
+	if ((el != null) && (data1 != null) && (data2 != null))
+	{
+		data1.disabled = el.checked;
+		data2.disabled = el.checked;
+	}
+}
+
+function OnInternetWirelessAircardClick()
+{
+	el = document.forms[0].elements['internetWirelessAircard[]'];
+	data = document.getElementById("internetWirelessProvider");
+	if ((el != null) && (data != null))
+	{
+		if (el.checked)
+		{
+			data.disabled = false;
+		}
+		else
+		{
+			data.disabled = true;
+		}
+	}
+}
+
+function ValidateNumber(object, evt, allowDot)
+{
+	var theEvent = evt || window.event;
+	var key = theEvent.keyCode || theEvent.which;
+	
+	// Special for firefox: check if this key is a control key
+	if (theEvent.charCode != 0)/* && ((theEvent.keyCode != 9) && (theEvent.keyCode != 8) 
+		&& (theEvent.keyCode != 46) && (theEvent.keyCode != 37)  && (theEvent.keyCode != 39) 
+		&& (theEvent.keyCode != 35) && (theEvent.keyCode != 36))*/
+	{
+		key = String.fromCharCode(key);
+		var regex = "";
+		if (allowDot)
+			regex = /[0-9]|\./;
+		else
+			regex = /[0-9]/;
+		if ((!regex.test(key)) || ((key == '.') && (object.value.indexOf('.') >= 0)))
+		{
+    		theEvent.returnValue = false;
+    		theEvent.preventDefault();
+  		}
+	}
+}
+
+function OnPhoneChange(evt, elementName, elementNumber)
+{
+	var theEvent = evt || window.event;
+	var key = theEvent.keyCode || theEvent.which;
+	key = String.fromCharCode( key );
+	var regex = /[0-9]/;
+	if (regex.test(key))
+	{
+		var currEl = document.getElementById(elementName + elementNumber);
+		var nextEl = document.getElementById(elementName + (elementNumber + 1));
+		if ((currEl != null) && (nextEl != null) && (currEl.value.length >= 3))
+		{
+			nextEl.focus();
+			nextEl.select();
+		}
+	}
+}
+
+function ValidateNumericField(object, evt, allowDot)
+{
+	ValidateNumber(object, evt, allowDot);
+}
+
+function ImposeMaxLength(object, evt, maxLen)
+{
+ 	var theEvent = evt || window.event;
+ 		
+	if ((theEvent.which != 0) && (object.value.length >= maxLen))
+	{
+		theEvent.returnValue = false;
+    	//theEvent.preventDefault();
+	}
+}
+
+function OnPageLoad()
+{
+	OnInternetWirelessAircardClick();
+	OnSecurityDontHaveChange();
+}
+
+function email_onKeyPress(object, evt)
+{
+	var key = evt.keyCode || evt.which;
+	
+	if (key == 95)
+	{
+		evt.returnValue = false;
+		evt.preventDefault();
+	}
+}
+
+function lettersAndDigits_onKeyPress(object, evt)
+{
+	if (evt.charCode != 0)
+	{
+		key = String.fromCharCode(evt.which);
+		var regexDigits = /[0-9]/;
+		var regexLetters = /[a-zA-Z]/;
+		if ((!regexDigits.test(key)) && (!regexLetters.test(key)))
+		{
+			evt.returnValue = false;
+			evt.preventDefault();
+  		}
+	}
+}
+</script>
+
+</html>

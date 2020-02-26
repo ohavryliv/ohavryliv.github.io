@@ -1,0 +1,240 @@
+td.blockTitle
+{
+	background-color: #3399FE;
+	color: white;
+	font-weight: bolder;
+	font-size: medium;
+	height: 25px;
+}
+
+.shortEdit
+{
+	width: 3.1em;
+	font-size: 88%;
+}
+
+.middleEdit1
+{
+	width: 4em;
+	font-size: 88%;
+}
+
+.middleEdit2
+{
+	width: 6.9em;
+	font-size: 88%;
+}
+
+.middleEdit3
+{
+	width: 12.2em;
+	font-size: 88%;
+}
+
+.middleEdit4
+{
+	width: 17em;
+	font-size: 88%;
+}
+
+.middleEdit5
+{
+	width: 19.2em;
+	font-size: 88%;
+}
+
+.middleCombo2
+{
+	width: 7.4em;
+	font-size: 88%;
+}
+
+.longEdit
+{
+	width: 34.2em;
+	font-size: 88%;
+}
+
+.dataTable
+{
+	width: 45em;
+}
+
+.mainTable
+{
+	background-color: #EEFFFF;
+	border-color: #CBDCED;
+	border-width: 1px;
+	border-style: solid;
+	width: 47em;
+}
+
+.errorTable
+{
+	color: red;
+	background-color: #EEFFFF;
+	border-color: red;
+	border-width: 1px;
+	border-style: solid;
+	width: 45em;
+	padding: 5px;
+}
+
+td.redFont
+{
+	color: red;
+}
+
+label.leftlabel,.leftlabel,.leftLabel
+{
+	display: inline-block;
+	padding: 2px .5em 0 0;
+	margin-left: 0.5em;
+	width: 9.1em;
+	text-align: right;
+}
+
+label.leftlabel1,.leftlabel1,.leftLabel1
+{
+	display: inline-block;
+	padding: 2px .5em 0 0;
+	width: 7em; 
+	text-align: right;
+}
+
+label.leftlabel2,.leftlabel2,.leftLabel2
+{
+	display: inline-block;
+	padding: 2px .5em 0 0;
+	width: 4em; 
+	text-align: right;
+}
+
+label.leftlabel3,.leftlabel3,.leftLabel3
+{
+	display: inline-block;
+	padding: 2px .5em 0 0;
+	width: 3em; 
+	text-align: right;
+}
+
+label.leftlabel4,.leftlabel4,.leftLabel4
+{
+	display: inline-block;
+	padding: 2px .5em 0 0;
+	width: 5em; 
+	text-align: right;
+}
+
+label.rightlabel,.rightlabel,.rightLabel
+{
+	display: inline-block;
+	padding: .3em .5em 0 0;
+	width: 4em;
+	text-align: left;
+}
+
+.req
+{
+	padding: .2em 0;
+	margin: 0;
+} 
+
+label.longLeftlabel,.longLeftlabel,.longLeftLabel
+{
+	display: inline-block;
+	padding: 2px .5em 0 0;
+	width: 16.5em;
+	text-align: left;
+}
+
+label.longLeftlabel1,.longLeftlabel1,.longLeftLabel1
+{
+	display: inline-block;
+	padding: 2px .5em 0 0;
+	width: 14em;
+	text-align: left;
+}
+
+label.longLeftlabel2,.longLeftlabel2,.longLeftLabel2
+{
+	display: inline-block;
+	padding: 2px .5em 0 0;
+	width: 11em;
+	text-align: right;
+}
+
+label.longLeftlabelEx,.longLeftlabelEx,.longLeftLabelEx
+{
+	display: inline-block;
+	padding: 2px .5em 0 0;
+	width: 16.5em;
+	text-align: left;
+}
+
+label.smallLabel
+{
+	display: inline-block;
+	padding: 0 0 0 0;
+	width: .5em;
+	text-align: center;
+}
+
+label.smallLabel1
+{
+	display: inline-block;
+	padding: 0 0 0 0;
+	width: .2em;
+	text-align: center;
+}
+
+
+.clear
+{
+	clear: both;
+	height: 0;
+	line-height: 0;
+	font-size: 0;
+	border: 0 none;
+	border-collapse: collapse;
+	outline: none;
+	padding: 0;
+	margin: 0;
+	background: transparent none;
+	overflow: hidden;	
+}
+
+.centerAlign
+{
+	text-align: center;
+}
+
+.rightAlign
+{
+	text-align: right;
+}
+
+.leftAlign
+{
+	text-align: left;
+}
+
+.oneCharLeftMargin
+{
+	margin-left: .7em;
+}
+
+.halfCharLeftMargin
+{
+	margin-left: .2em;
+}
+
+.halfWidthLeftMargin
+{
+	margin-left: 16em;
+}
+
+span.monoFont
+{
+	font-family: "Courier New", Courier, monospace
+}
