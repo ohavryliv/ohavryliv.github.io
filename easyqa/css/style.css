@@ -141,13 +141,7 @@ body:before {
           transform: scale(1.02);
 }
 
-.lf--forgot {
-  margin-top: 2em;
-  color: #ffffff;
-  font-size: .5em;
-  text-align: center;
-  float: left;
-}
+
 
 ::-webkit-input-placeholder {
   color: #ffffff;
