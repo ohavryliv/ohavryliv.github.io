@@ -1,1 +1,1 @@
-# https://creio.gitlab.io/cvc
+# mkdocs-netlify
