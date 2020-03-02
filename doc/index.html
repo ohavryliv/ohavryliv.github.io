@@ -75,7 +75,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#hello-world" tabindex="0" class="md-skip">
+      <a href="#email-address" tabindex="0" class="md-skip">
         Skip to content
       </a>
     
@@ -101,7 +101,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Hello world!
+                Email address
               
             </span>
           
@@ -178,8 +178,8 @@
       
     
     
-    <a href="." title="Hello world!" class="md-nav__link md-nav__link--active">
-      Hello world!
+    <a href="." title="Email address" class="md-nav__link md-nav__link--active">
+      Email address
     </a>
     
   </li>
@@ -213,8 +213,63 @@
               
                 
                 
-                <h1 id="hello-world">Hello world!</h1>
-<p>Just a test</p>
+                <h1 id="email-address">Email address</h1>
+<p><strong>Syntax</strong></p>
+<p>The format of email addresses is <strong>local-part@domain</strong> where the local part may be up to 64 octets long and the domain may have a maximum of 255 octets.The formal definitions are in RFC 5322 (sections 3.2.3 and 3.4.1) and RFC 5321—with a more readable form given in the informational RFC 3696 and the associated errata. Note that unlike the syntax of RFC 1034, and RFC 1035 there is no trailing period in the domain name.</p>
+<p><strong>Local-part</strong></p>
+<p>The local-part of the email address maybe unquoted or may be enclosed in quotation marks.</p>
+<p>If unquoted, it may use any of these ASCII characters:</p>
+<p>uppercase and lowercase Latin letters A to Z and a to z;</p>
+<p>digits 0 to 9;</p>
+<p>printable characters !#$%&amp;&#39;*+-/=?^_`{|}~;</p>
+<p>dot ., provided that it is not the first or last character and provided also that it does not appear consecutively (e.g., John..Doe@example.com is not allowed.</p>
+<p>If quoted, it may contain Space, Horizontal Tab (HT), any ASCII graphic except Backslash and Quote and a quoted-pair consisting of a Backslash followed by HT, Space or any ASCII graphic; it may also be split between lines anywhe that HT or Space appears. In contrast to unquoted local-parts, the addresses &quot;.John.Doe&quot;@example.com, &quot;John.Doe.&quot;@example.com and &quot;John..Doe&quot;@example.com are allowed.</p>
+<p>The maximum total length of the local-part of an email address is 64 octets.[9]</p>
+<p>Note that some mail servers support wildcard recognition of local parts, typically the characters following a plus and less often the characters following a minus, so fred+bah@domain and fred+foo@domain might end up in the same inbox as fred+@domain or even as fred@domain. This can be useful for tagging emails for sorting, see below, and for spam control. Braces { and } are also used in that fashion, although less often.[citation needed]</p>
+<p>space and special characters &quot;(),:;\&lt;\&gt;@[] are allowed with restrictions (they are only allowed inside a quoted string, as described in the paragraph below, and in addition, a backslash or double-quote must be preceded by a backslash);</p>
+<p>comments are allowed with parentheses at either end of the local-part; e.g. john.smith(comment)@example.com and (comment)john.smith@example.com are both equivalent to john.smith@example.com.</p>
+<p>In addition to the above ASCII characters, international characters above U+007F, encoded as UTF-8, are permitted by RFC 6531, though even mail systems that support SMTPUTF8 and 8BITMIME may restrict which characters to use when assigning local-parts.</p>
+<p>A local part is either a Dot-string or a Quoted-string; it cannot be a combination. Quoted strings and characters however, are not commonly used.[citation needed] RFC 5321 also warns that &quot;a host that expects to receive mail SHOULD avoid defining mailboxes where the Local-part requires (or uses) the Quoted-string form&quot;.</p>
+<p>The local-part postmaster is treated specially—it is case-insensitive, and should be forwarded to the domain email administrator. Technically all other local-parts are case-sensitive, therefore jsmith@example.com and JSmith@example.com specify different mailboxes; however, many organizations treat uppercase and lowercase letters as equivalent. Indeed, RFC 5321 warns that &quot;a host that expects to receive mail SHOULD avoid defining mailboxes where ... the Local-part is case-sensitive&quot;.</p>
+<p>Despite the wide range of special characters which are technically valid, organisations, mail services, mail servers and mail clients in practice often do not accept all of them. For example, Windows Live Hotmail only allows creation of email addresses using alphanumerics, dot (.), underscore (_) and hyphen (-). Common advice is to avoid using some special characters to avoid the risk of rejected emails.</p>
+<p><strong>Domain</strong></p>
+<p>The domain name part of an email address has to conform to strict guidelines: it must match the requirements for a hostname, a list of dot-separated DNS labels, each label being limited to a length of 63 characters and consisting of:</p>
+<p>uppercase and lowercase Latin letters A to Z and a to z;</p>
+<p>digits 0 to 9, provided that top-level domain names are not all-numeric;</p>
+<p>hyphen -, provided that it is not the first or last character.</p>
+<p>This rule is known as the LDH rule (letters, digits, hyphen). In addition, the domain may be an IP address literal, surrounded by square brackets [], such as jsmith@[192.168.2.1] or jsmith@[IPv6:2001:db8::1], although this is rarely seen except in email spam. Internationalized domain names (which are encoded to comply with the requirements for a hostname) allow for presentation of non-ASCII domains. In mail systems compliant with RFC 6531 and RFC 6532 an email address may be encoded as UTF-8, both a local-part as well as a domain name.</p>
+<p>Comments are allowed in the domain as well as in the local-part; for example, john.smith@(comment)example.com and john.smith@example.com(comment) are equivalent to john.smith@example.com.</p>
+<p><strong>Reserved domains</strong></p>
+<p>RFC 2606 specifies that certain domains intended for, e.g., documentation, testing, should not be resolvable and that as a result mail addressed to mailboxes in them and their subdomains should be non-deliverable. Of note for e-mail are</p>
+<p>.example</p>
+<p>.invalid</p>
+<p>example.com</p>
+<p>example.net</p>
+<p>example.org</p>
+<p><strong>Examples</strong></p>
+<p><strong>Valid email addresses</strong></p>
+<p>simple@example.com</p>
+<p>very.common@example.com</p>
+<p>disposable.style.email.with+symbol@example.com</p>
+<p>other.email-with-hyphen@example.com</p>
+<p>fully-qualified-domain@example.com</p>
+<p>user.name+tag+sorting@example.com (may go to user.name@example.com inbox depending on mail server)</p>
+<p>x@example.com (one-letter local-part)</p>
+<p>example-indeed@strange-example.com</p>
+<p>admin@mailserver1 (local domain name with no TLD, although ICANN highly discourages dotless email addresses)</p>
+<p>example@s.example (see the List of Internet top-level domains)</p>
+<p>&quot; &quot;@example.org (space between the quotes)</p>
+<p>&quot;john..doe&quot;@example.org (quoted double dot)</p>
+<p>mailhost!username@example.org (bangified host route used for uucp mailers)</p>
+<p>user%example.com@example.org (% escaped mail route to user@example.com via example.org)</p>
+<p><strong>Invalid email addresses</strong></p>
+<p>Abc.example.com (no @ character)</p>
+<p>A@b@c@example.com (only one @ is allowed outside quotation marks)</p>
+<p>a&quot;b(c)d,e:f;g\&lt;h\&gt;i[j\k]l@example.com (none of the special characters in this local-part are allowed outside quotation marks)</p>
+<p>just&quot;not&quot;right@example.com (quoted strings must be dot separated or the only element making up the local-part)</p>
+<p>this is&quot;not\allowed@example.com (spaces, quotes, and backslashes may only exist when within quoted strings and preceded by a backslash)</p>
+<p>this\ still\&quot;not\allowed@example.com (even if escaped (preceded by a backslash), spaces, quotes, and backslashes must still be contained by quotes)</p>
+<p>1234567890123456789012345678901234567890123456789012345678901234+x@example.com (local part is longer than 64 characters)</p>
                 
                   
                 
