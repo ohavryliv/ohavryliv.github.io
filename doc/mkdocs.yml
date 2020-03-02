@@ -1,0 +1,81 @@
+site_name: Creio Docs
+# site_url: https://ctlos.gitlab.io/
+site_url: https://creio.gitlab.io/cvc
+repo_name: creio/cvc
+repo_url: https://gitlab.com/creio/cvc
+edit_uri: "blob/master/docs"
+site_description: Заметки о Linux и не только.
+site_author: Alex Creio
+copyright: Copyright &copy; <a href="https://cvc.hashbase.io">Alex Creio</a>.
+
+nav:
+  - MkDocs Material: index.md
+  - User Guide:
+    - Writing Your Docs: user-guide/writing-your-docs.md
+    - Styling Your Docs: user-guide/styling-your-docs.md
+    - Configuration: user-guide/configuration.md
+    - Deploying Your Docs: user-guide/deploying-your-docs.md
+    - Custom Themes: user-guide/custom-themes.md
+    - Plugins: user-guide/plugins.md
+  - Extensions:
+    - Admonition: extensions/admonition.md
+    - CodeHilite: extensions/codehilite.md
+    - Footnotes: extensions/footnotes.md
+    - Metadata: extensions/metadata.md
+    - Permalinks: extensions/permalinks.md
+    - PyMdown: extensions/pymdown.md
+  # - About:
+  #   - Release Notes: about/release-notes.md
+  #   - Contributing: about/contributing.md
+  #   - License: about/license.md
+
+theme:
+  name: material
+  custom_dir: 'material'
+  palette:
+    primary: 'indigo'
+    accent: 'indigo'
+  logo: 'assets/img/logo/logo-wd.svg'
+  favicon: 'assets/img/favicon/favicon.ico'
+  language: 'ru'
+  feature:
+    tabs: false
+
+extra:
+  search:
+    language: 'ru, en, de'
+  social:
+    - type: telegram-plane
+      link: https://t.me/cretm
+    - type: youtube
+      link: https://www.youtube.com/channel/UCPCp_ZnMKEwYdnA_YfOZrZg?sub_confirmation=1
+    - type: vk
+      link: https://vk.com/creio
+    - type: github-alt
+      link: https://github.com/creio
+    - type: gitlab
+      link: https://gitlab.com/creio
+  # disqus: 'your-shortname'
+
+extra_css:
+  - assets/css/main.css
+  - assets/libs/magnific-popup/magnific-popup.css
+
+extra_javascript:
+  - assets/libs/jquery/jquery-3.4.0.min.js
+  - assets/libs/magnific-popup/jquery.magnific-popup.min.js
+  - assets/js/main.js
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      linenums: true
+      # guess_lang: false
+  - toc:
+      permalink: true
+  - meta
+      
+google_analytics:
+  - 'UA-XXXXXXXX-X'
+  - 'auto'
