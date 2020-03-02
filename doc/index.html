@@ -178,9 +178,66 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Email address
+      </label>
+    
     <a href="." title="Email address" class="md-nav__link md-nav__link--active">
       Email address
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#syntax" class="md-nav__link">
+    Syntax
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#local-part" class="md-nav__link">
+    Local-part
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#domain" class="md-nav__link">
+    Domain
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#valid-email-addresses" class="md-nav__link">
+    Valid email addresses
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#invalid-email-addresses" class="md-nav__link">
+    Invalid email addresses
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -202,6 +259,50 @@
     
   
   
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#syntax" class="md-nav__link">
+    Syntax
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#local-part" class="md-nav__link">
+    Local-part
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#domain" class="md-nav__link">
+    Domain
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#valid-email-addresses" class="md-nav__link">
+    Valid email addresses
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#invalid-email-addresses" class="md-nav__link">
+    Invalid email addresses
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -214,9 +315,9 @@
                 
                 
                 <h1 id="email-address">Email address</h1>
-<p><strong>Syntax</strong></p>
+<h2 id="syntax">Syntax</h2>
 <p>The format of email addresses is <strong>local-part@domain</strong> where the local part may be up to 64 octets long and the domain may have a maximum of 255 octets.The formal definitions are in RFC 5322 (sections 3.2.3 and 3.4.1) and RFC 5321—with a more readable form given in the informational RFC 3696 and the associated errata. Note that unlike the syntax of RFC 1034, and RFC 1035 there is no trailing period in the domain name.</p>
-<p><strong>Local-part</strong></p>
+<h2 id="local-part">Local-part</h2>
 <p>The local-part of the email address maybe unquoted or may be enclosed in quotation marks.</p>
 <p>If unquoted, it may use any of these ASCII characters:</p>
 <p>uppercase and lowercase Latin letters A to Z and a to z;</p>
@@ -232,7 +333,7 @@
 <p>A local part is either a Dot-string or a Quoted-string; it cannot be a combination. Quoted strings and characters however, are not commonly used.[citation needed] RFC 5321 also warns that &quot;a host that expects to receive mail SHOULD avoid defining mailboxes where the Local-part requires (or uses) the Quoted-string form&quot;.</p>
 <p>The local-part postmaster is treated specially—it is case-insensitive, and should be forwarded to the domain email administrator. Technically all other local-parts are case-sensitive, therefore jsmith@example.com and JSmith@example.com specify different mailboxes; however, many organizations treat uppercase and lowercase letters as equivalent. Indeed, RFC 5321 warns that &quot;a host that expects to receive mail SHOULD avoid defining mailboxes where ... the Local-part is case-sensitive&quot;.</p>
 <p>Despite the wide range of special characters which are technically valid, organisations, mail services, mail servers and mail clients in practice often do not accept all of them. For example, Windows Live Hotmail only allows creation of email addresses using alphanumerics, dot (.), underscore (_) and hyphen (-). Common advice is to avoid using some special characters to avoid the risk of rejected emails.</p>
-<p><strong>Domain</strong></p>
+<h2 id="domain">Domain</h2>
 <p>The domain name part of an email address has to conform to strict guidelines: it must match the requirements for a hostname, a list of dot-separated DNS labels, each label being limited to a length of 63 characters and consisting of:</p>
 <p>uppercase and lowercase Latin letters A to Z and a to z;</p>
 <p>digits 0 to 9, provided that top-level domain names are not all-numeric;</p>
@@ -247,7 +348,7 @@
 <p>example.net</p>
 <p>example.org</p>
 <p><strong>Examples</strong></p>
-<p><strong>Valid email addresses</strong></p>
+<h2 id="valid-email-addresses">Valid email addresses</h2>
 <p>simple@example.com</p>
 <p>very.common@example.com</p>
 <p>disposable.style.email.with+symbol@example.com</p>
@@ -262,7 +363,7 @@
 <p>&quot;john..doe&quot;@example.org (quoted double dot)</p>
 <p>mailhost!username@example.org (bangified host route used for uucp mailers)</p>
 <p>user%example.com@example.org (% escaped mail route to user@example.com via example.org)</p>
-<p><strong>Invalid email addresses</strong></p>
+<h2 id="invalid-email-addresses">Invalid email addresses</h2>
 <p>Abc.example.com (no @ character)</p>
 <p>A@b@c@example.com (only one @ is allowed outside quotation marks)</p>
 <p>a&quot;b(c)d,e:f;g\&lt;h\&gt;i[j\k]l@example.com (none of the special characters in this local-part are allowed outside quotation marks)</p>
